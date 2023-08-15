@@ -1,0 +1,304 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: #CCCC;
+}
+
+.title {
+ font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 29 px;
+  color: #CCCC;
+}
+
+body {
+background-color: rgb(25, 43, 84);
+}
+
+
+/*Paginas principal*/
+.contenedorCartas{
+	display: flex;
+	
+	position: absolute; 
+	left: 50%; 
+	top: 50%; 
+	transform: translate(-50%, -50%);
+
+}
+
+.div-Integrantes,
+.div-Proyecto,
+.div-Desarrollo,
+.div-Contacto{
+	height: 550px;
+  width: 350px;
+	margin-left: 4px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+ 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 20px;
+}
+
+.div-Integrantes{
+  background-image: url(./imagenes/integrantesINDEX.jpg); 
+} 
+
+.div-Desarrollo{
+  background-image: url(./imagenes/desarolloINDEX.jpg); 
+}
+
+.div-Contacto{
+  background-image: url(./imagenes/contactoINDEX.jpg); 
+}
+
+.div-Proyecto{
+  background-image: url(./imagenes/proyectoINDEX.jpg); 
+}
+
+
+/*Seccion integrantes*/
+/*Integrantes*/
+.div-integrantes{
+	display: flex;
+	position: absolute; 
+	left: 50%; 
+	top: 50%; 
+	transform: translate(-50%, -50%);
+  
+}
+
+.div-Chantryt,
+.div-Gerardo,
+.div-Daniel,
+.div-Christian{
+	height: 550px;
+  width: 400px;
+	margin-left: 10px;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+ 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 20px;
+
+	overflow: hidden;
+}
+
+.div-Chantryt{
+	background-image: url(../../templates/imagenes/integrantes/Chantryt.jpg); 
+	background-size: 70%;
+	background-position: top;
+	
+}
+.div-Gerardo{
+	background-image: url(../../templates/imagenes/integrantes/Gerardo.jpg); 
+	background-size: 70%;
+	background-position: top;
+}
+
+.div-Daniel{
+	background-image: url(../../templates/imagenes/integrantes/Daniel.jpg); 
+	background-size: 70%;
+	background-position: top;
+}
+.div-Christian{
+	background-image: url(../../templates/imagenes/integrantes/Christian.jpg); 
+	background-size: 70%;
+	background-position: top;
+}
+
+/*Descripciones*/
+.div-descripciones{
+	display: flex;
+	position: absolute; 
+	left: 50%; 
+	top: 80%; 
+	transform: translate(-50%, -50%);
+}
+
+.div-descripcionChantryt,
+.div-descripcionHidalgo,
+.div-descripcionVera,
+.div-descripcionDaniel{
+	/*Texto*/
+	overflow-wrap: break-word;
+	height: 300px;
+  width: 400px;
+	margin-left: 10px;
+	background-color: #E8E0BF;
+}
+
+/*Header para todas las paginas*/
+header{
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	background-color: #E8E0BF;
+}
+
+
+.contenedorDescripciones{
+	display: flex;
+	justify-content: center; 
+}
+
+
+.button-container {
+    margin-top: auto;
+    font-size: 25px;
+    color: rgb(37,37,38)
+}
+
+.section-heading {
+  font-size: 39px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #0e0e0e;
+}
+
+.subsection-heading {
+  font-size: 16px;
+  margin-top: 15px;
+  color: #0e0e0e;
+}
+
+/*Estilos Pagina Proyecto*/
+
+.section-heading-proyecto {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align:center;
+  color: #CCCC;
+}
+
+.subsection-heading-proyecto {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align:center;
+  color: #CCCC;
+}
+
+.subsubsection-heading-proyecto {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+  padding-left: 1em;
+  color: #CCCC;
+}
+.topicsection-heading-proyecto {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  padding-left: 3em;
+  color: #CCCC;
+}
+.content-proyecto {
+  font-size: 15px;
+  padding-left: 4em;
+}
+.textsection-proyecto{
+  font-size: 15px;
+}
+.table-proyecto{
+  padding-left: 4em;
+  border:1px solid black;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+.image-centered{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+} 
+
+.form_contacto{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+span{
+  color: rgb(25, 43, 84); 
+}
+
+label{
+  display: block; 
+  float: center;  
+} 
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: rgb(25, 43, 84) ; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+} 
+
+button{
+  background-color: #f7f7f8;
+}
+
+.boton_formulario{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: rgb(25, 43, 84); 
+  border-color: rgb(25, 43, 84); 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}

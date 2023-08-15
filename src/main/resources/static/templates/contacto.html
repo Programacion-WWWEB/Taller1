@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	  <meta charset="utf-8">
+	  <title>Integrantes</title>
+	  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+	
+	</head>
+<body>
+  <header class="header">
+		<button onclick="window.open('./paginaPrincipal.html'); " style="float: left; margin-right: 20px;">Pagina principal</button>
+		<h1 style="text-align: center;">Nombre del grupo</h1>
+		<button onclick="window.open('./proyecto.html'); " style="float: right; margin-left: 20px;">Proyecto</button>
+		<button onclick="window.open('./integrantes.html'); " style="float: right; margin-left: 20px;">Integrantes</button>
+		<button onclick="window.open('./desarrollo.html'); " style="float: right; margin-left: 20px;">Desarollo</button>
+
+	</header> 
+
+  <div class = "form_contacto">  
+  <p> SE DEBE HACER EN THYMELEAF form action = "/controler" method = "POST" </p>
+  <h1 class="section-heading"> Contactenos </h1>
+   <h2 class="subsection-heading">
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </h2>
+              
+                <h2 class="subsection-heading">
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </h2>
+            
+                <h2 class="subsection-heading">
+                  <label for="telefono" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </h2>    
+              
+                <h2 class="subsection-heading">
+                  <label for="website" class="colocar_website">Sitio web
+                  </label>
+                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                </h2>    
+              
+                <h2 class="subsection-heading">
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </h2>    
+              
+                <h2 class="subsection-heading">
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                </h2>
+     <button class = "boton_formulario" type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+      <h3 class="subsection-heading">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </h3>   
+  </div>
+
+</body>
+</html>
