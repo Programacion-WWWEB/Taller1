@@ -1,0 +1,112 @@
+.
+├── HELP.md
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── README.md
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── javeriana
+│   │   │       └── co
+│   │   │           └── TallerWikiGroup
+│   │   │               ├── controllers
+│   │   │               │   └── indexControler.java
+│   │   │               ├── modelo
+│   │   │               │   └── mensaje.java
+│   │   │               ├── ServletInitializer.java
+│   │   │               └── TallerWikiGroupApplication.java
+│   │   └── resources
+│   │       ├── application.properties
+│   │       ├── static
+│   │       │   ├── css
+│   │       │   │   ├── imagenes
+│   │       │   │   │   ├── contactoINDEX.jpg
+│   │       │   │   │   ├── desarolloINDEX.jpg
+│   │       │   │   │   ├── integrantesINDEX.jpg
+│   │       │   │   │   └── proyectoINDEX.jpg
+│   │       │   │   └── style.css
+│   │       │   └── index.html
+│   │       └── templates
+│   │           ├── contacto.html
+│   │           ├── desarrollo.html
+│   │           ├── imagenes
+│   │           │   ├── arquitecturaGeneral
+│   │           │   │   ├── modeloComponente.png
+│   │           │   │   ├── modeloConceptual.png
+│   │           │   │   └── modeloContenedores.png
+│   │           │   ├── atras.png
+│   │           │   ├── descripcion.jpg
+│   │           │   └── integrantes
+│   │           │       ├── Chantryt.jpg
+│   │           │       ├── Christian.jpg
+│   │           │       ├── Daniel.jpg
+│   │           │       └── Gerardo.jpg
+│   │           ├── integrantes.html
+│   │           ├── paginaPrincipal.html
+│   │           └── proyecto.html
+│   └── test
+│       └── java
+│           └── javeriana
+│               └── co
+│                   └── edu
+│                       └── EduApplicationTests.java
+├── target
+│   ├── classes
+│   │   ├── application.properties
+│   │   ├── javeriana
+│   │   │   └── co
+│   │   │       └── TallerWikiGroup
+│   │   │           ├── controllers
+│   │   │           ├── modelo
+│   │   │           ├── ServletInitializer.class
+│   │   │           └── TallerWikiGroupApplication.class
+│   │   ├── static
+│   │   │   ├── css
+│   │   │   │   ├── imagenes
+│   │   │   │   │   ├── contactoINDEX.jpg
+│   │   │   │   │   ├── desarolloINDEX.jpg
+│   │   │   │   │   ├── integrantesINDEX.jpg
+│   │   │   │   │   └── proyectoINDEX.jpg
+│   │   │   │   └── style.css
+│   │   │   ├── index.html
+│   │   │   └── templates
+│   │   │       └── imagenes
+│   │   │           ├── arquitecturaGeneral
+│   │   │           └── integrantes
+│   │   └── templates
+│   │       ├── contacto.html
+│   │       ├── desarrollo.html
+│   │       ├── imagenes
+│   │       │   ├── arquitecturaGeneral
+│   │       │   │   ├── modeloComponente.png
+│   │       │   │   ├── modeloConceptual.png
+│   │       │   │   └── modeloContenedores.png
+│   │       │   ├── atras.png
+│   │       │   ├── descripcion.jpg
+│   │       │   └── integrantes
+│   │       │       ├── Chantryt.jpg
+│   │       │       ├── Christian.jpg
+│   │       │       ├── Daniel.jpg
+│   │       │       └── Gerardo.jpg
+│   │       ├── integrantes.html
+│   │       ├── paginaPrincipal.html
+│   │       └── proyecto.html
+│   ├── generated-sources
+│   │   └── annotations
+│   ├── generated-test-sources
+│   │   └── test-annotations
+│   ├── maven-status
+│   │   └── maven-compiler-plugin
+│   │       └── compile
+│   │           └── default-compile
+│   │               ├── createdFiles.lst
+│   │               └── inputFiles.lst
+│   └── test-classes
+│       └── javeriana
+│           └── co
+│               └── edu
+│                   └── EduApplicationTests.class
+└── tree_structure.txt
+
+51 directories, 58 files

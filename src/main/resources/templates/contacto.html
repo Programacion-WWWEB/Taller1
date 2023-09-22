@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 	<head>
 	  <meta charset="utf-8">
@@ -9,11 +9,15 @@
 	</head>
 <body>
   <header class="header">
-		<button onclick="window.open('./paginaPrincipal.html'); " style="float: left; margin-right: 20px;">Pagina principal</button>
+    <a th:href="@{/paginaPrincipal}">
+		<button style="float: left; margin-right: 20px;">Pagina principal</button></a>
 		<h1 style="text-align: center;">Nombre del grupo</h1>
-		<button onclick="window.open('./proyecto.html'); " style="float: right; margin-left: 20px;">Proyecto</button>
-		<button onclick="window.open('./integrantes.html'); " style="float: right; margin-left: 20px;">Integrantes</button>
-		<button onclick="window.open('./desarrollo.html'); " style="float: right; margin-left: 20px;">Desarollo</button>
+    <a th:href="@{/proyecto}">
+		<button style="float: right; margin-left: 20px;">Proyecto</button></a>
+    <a th:href="@{/integrantes}">
+		<button style="float: right; margin-left: 20px;">Integrantes</button></a>
+		<a th:href="@{/desarrollo}">
+    <button style="float: right; margin-left: 20px;">Desarollo</button> </a>
 
 	</header> 
 

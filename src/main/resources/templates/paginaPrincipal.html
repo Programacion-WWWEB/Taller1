@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 	<head>
 	  <meta charset="utf-8">
@@ -24,25 +24,29 @@
       <div class = "button-container">
 			</div>
       </div>
-			<button onclick="window.open('./proyecto.html');" >Integrantes</button>
+	  <a th:href="@{/integrantes}">
+			<button onclick="window.open('/integrantes');" >Integrantes</button></a>
 			
 			<div class = "div-Proyecto">
       <div class = "button-container">
       </div>
       </div>
-			<button onclick="window.open('./proyecto.html');">Proyecto</button>			
+	  <a th:href="@{/proyecto}">
+			<button onclick="window.open('/proyecto');">Proyecto</button></a>	
 			
 			<div class = "div-Desarrollo">
       <div class = "button-container">
  			</div>
       </div>
-			<button onclick="window.open('./desarrollo.html');">Desarrollo</button>			
+	  <a th:href="@{/desarrollo}">
+			<button onclick="window.open('/desarrollo');">Desarrollo</button></a>		
 			
 			<div class = "div-Contacto">
       <div class = "button-container">
 			</div>
 			</div>
-			<button onclick="window.open('./contacto.html'); ">Contacto</button>
+			<a th:href="@{/contacto}">
+			<button>Contacto</button></a>
 		</div>
 		
 

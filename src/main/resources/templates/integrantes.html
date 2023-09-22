@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 	<head>
 	  <meta charset="utf-8">
@@ -14,11 +14,15 @@
 
 		<!-- Cabecera -->
 	<header class="header">
-		<button onclick="window.open('./paginaPrincipal.html'); " style="float: left; margin-right: 20px;">Pagina principal</button>
+		<a th:href="@{/paginaPrincipal}">
+		<button style="float: left; margin-right: 20px;">Pagina principal</button></a>
 		<h1 style="text-align: center;">Nombre del grupo</h1>
-		<button onclick="window.open('./proyecto.html'); " style="float: right; margin-left: 20px;">Proyecto</button>
-		<button onclick="window.open('./desarrollo.html'); " style="float: right; margin-left: 20px;">Desarrollo</button>
-		<button onclick="window.open('./contacto.html'); " style="float: right; margin-left: 20px;">Contacto</button>
+		<a th:href="@{/proyecto}">
+		<button style="float: right; margin-left: 20px;">Proyecto</button></a>
+		<a th:href="@{/desarrollo}">
+		<button style="float: right; margin-left: 20px;">Desarrollo</button></a>
+		<a th:href="@{/contacto}">
+		<button style="float: right; margin-left: 20px;">Contacto</button></a>
 	</header>
 
 
@@ -27,15 +31,15 @@
 -->
 	<div class="div-integrantes">
 	  <div class="div-Chantryt">
-			<button onclick="window.open('./proyecto.html');">Jorge Chantryt</button>		
+			<button onclick="window.open('templates/proyecto');">Jorge Chantryt</button>		
 	  </div>
 	
 	  <div class="div-Gerardo">
-			<button onclick="window.open('./proyecto.html');">Gerardo Hidalgo</button>		
+			<button onclick="window.open('templates/proyecto');">Gerardo Hidalgo</button>		
 	  </div>
 	
 	  <div class="div-Daniel">
-			<button onclick="window.open('./proyecto.html');">Daniel Niño</button>		
+			<button onclick="window.open('templates/proyecto');">Daniel Niño</button>		
 	  </div>
 	
 	  <div class="div-Christian">
