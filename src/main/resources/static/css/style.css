@@ -52,19 +52,19 @@ background-color: rgb(25, 43, 84);
 }
 
 .div-Integrantes{
-  background-image: url(./imagenes/integrantesINDEX.jpg); 
+  background-image: url(../imagenes/integrantesINDEX.jpg); 
 } 
 
 .div-Desarrollo{
-  background-image: url(./imagenes/desarolloINDEX.jpg); 
+  background-image: url(../imagenes/desarolloINDEX.jpg); 
 }
 
 .div-Contacto{
-  background-image: url(./imagenes/contactoINDEX.jpg); 
+  background-image: url(../imagenes/contactoINDEX.jpg); 
 }
 
 .div-Proyecto{
-  background-image: url(./imagenes/proyectoINDEX.jpg); 
+  background-image: url(../imagenes/proyectoINDEX.jpg); 
 }
 
 

@@ -42,18 +42,12 @@ public class DestinationController {
     return "proyecto";
 }  
 
-    @GetMapping("/contacto")
-    public String contactoTemplate(){
-
-        return "contacto";
-    }
-
     @GetMapping("/integrantes")
     public String integrantesTemplate(){
 
         return "integrantes";
-    }
-
+    } 
+  
     @GetMapping("/desarrollo")
     public String desarrolloTemplate(){
 
