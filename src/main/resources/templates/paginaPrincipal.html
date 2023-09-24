@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	  <meta charset="utf-8">
+	  <title>Taller WikiGroup</title>
+	  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+	
+	  
+	
+	</head>
+
+	<body>
+
+		<h1 class = "title"> Nombre del Grupo - Nombre del proyecto</h1>
+    
+	  <script src="script.js"></script>
+
+	  
+			<!-- CARTAS -->
+		<div class = "contenedorCartas">
+			
+			<div class = "div-Integrantes">
+      <div class = "button-container">
+			</div>
+      </div>
+	  <a th:href="@{/integrantes}">
+			<button onclick="window.open('/integrantes');" >Integrantes</button></a>
+			
+			<div class = "div-Proyecto">
+      <div class = "button-container">
+      </div>
+      </div>
+	  <a th:href="@{/proyecto}">
+			<button onclick="window.open('/proyecto');">Proyecto</button></a>	
+			
+			<div class = "div-Desarrollo">
+      <div class = "button-container">
+ 			</div>
+      </div>
+	  <a th:href="@{/desarrollo}">
+			<button onclick="window.open('/desarrollo');">Desarrollo</button></a>		
+			
+			<div class = "div-Contacto">
+      <div class = "button-container">
+			</div>
+			</div>
+			<a th:href="@{/contacto}">
+			<button>Contacto</button></a>
+		</div>
+		
+
+	</body>
+
+</html>

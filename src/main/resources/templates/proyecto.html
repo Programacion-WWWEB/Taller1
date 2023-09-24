@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf,org">
+
+	<head>
+	  <meta charset="utf-8">
+	  <title>Integrantes</title>
+	  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <script src="../jss/script.js" type="text/javascript" th:inline="javascript"></script>
+	
+	</head>
+<body>
+  
+  <header class="header">
+    <a th:href= "@{/paginaPrincipal}">
+		<button style="float: left; margin-right: 20px;">Pagina principal</button></a>
+		<h1 style="text-align: center;">Nombre del grupo</h1>
+    <a th:href="@{/contacto}">
+		<button id="contactoButton" style="float: right; margin-left: 20px;">Contacto</button></a>
+		<a th:href="@{/integrantes}">
+    <button style="float: right; margin-left: 20px;">Integrantes</button></a>
+    <a th:href="@{/desarrollo}">
+		<button style="float: right; margin-left: 20px;">Desarrollo</button></a>
+	</header> 
+
+  
+  <h1 class="title"> MusicaList </h1>
+  <h2 class="section-heading-proyecto"> Descripción</h2>
+  <p class="content-proyecto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget magna quis elit pretium feugiat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed in nunc quam. Aenean vitae enim a metus ultrices varius id non sem. Fusce in nulla molestie, facilisis enim id, tempor augue. Praesent aliquet mollis dapibus. Vestibulum ac est sit amet ligula ultrices mollis. Aliquam aliquam pulvinar neque, id accumsan orci bibendum aliquam. In velit sapien, viverra ac facilisis quis, fringilla id lorem.</p>
+<img src="./imagenes/descripcion.jpg" class="image-centered">
+  <h2 class="section-heading-proyecto"> Requerimientos </h2>
+  
+  <h3 class="subsubsection-heading-proyecto"> Funcionales </h3>
+  <h4 class="topicsection-heading-proyecto">Historias de Usuarios</h4>
+  <p class="content-proyecto">Usuario votante</p>
+  <table class="table-proyecto">
+<tbody>
+<tr>
+<td>HUV.1.	Creación de cuenta</td>
+</tr>
+<tr>
+<td>HUV.2.	Activación de cuenta</td>
+</tr>
+<tr>
+<td>HUV.3.	Autenticación de usuario</td>
+</tr>
+<tr>
+<td>HUV.4.	Ver listas por género musical creadas</td>
+</tr>
+<tr>
+<td>HUV.5.	Buscar canción una canción</td>
+</tr>
+<tr>
+<td>HUV.6.	Votar/Desvotar por una lista</td>
+</tr>
+</tbody>
+</table>
+  <p class="content-proyecto">Usuario administrador</p>
+  <table class="table-proyecto">
+<tbody>
+<tr>
+<td>HUV.1.	Autenticación de usuario</td>
+</tr>
+<tr>
+<td>HUV.2.	CRUD Géneros músicales</td>
+</tr>
+<tr>
+<td>HUV.3.	CRUD Canciones</td>
+</tr>
+</tbody>
+</table>
+  <h3 class="subsubsection-heading-proyecto"> No Funcionales </h3>
+  <p class="content-proyecto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget magna quis elit pretium feugiat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed in nunc quam. Aenean vitae enim a metus ultrices varius id non sem. Fusce in nulla molestie, facilisis enim id, tempor augue. Praesent aliquet mollis dapibus. Vestibulum ac est sit amet ligula ultrices mollis. Aliquam aliquam pulvinar neque, id accumsan orci bibendum aliquam. In velit sapien, viverra ac facilisis quis, fringilla id lorem.</p>
+  <h1 class="section-heading-proyecto"> Arquitectura General </h1>
+   <h2 class="subsection-heading-proyecto"> Modelo Conceptual </h2>
+   <img th:alt="proyecto" th:src="@{./imagenes/arquitecturaGeneral/modeloConceptual.png}" class = "image-centered"/>
+   <h2 class="subsection-heading-proyecto"> Modelo Contenedores </h2>
+  <img th:alt="proyecto" th:src="@{./imagenes/arquitecturaGeneral/modeloContenedores.png}" class = "image-centered"/>
+   <h2 class="subsection-heading-proyecto"> Modelo Componentes </h2>
+  <img th:alt="proyecto" th:src="@{./imagenes/arquitecturaGeneral/modeloComponente.png}" class = "image-centered"/>
+  <h2 class="subsection-heading-proyecto"> Modelo Entidad/Relación </h2>
+  <img th:alt="proyecto" src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png" class = "image-centered"> </img>
+ <h2 class="subsection-heading-proyecto"> Diagrama de despliegue </h2>
+  <img th:alt="proyecto" src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png" class = "image-centered"></img>
+  <div id="contentContainer"></div>
+</body>
+</html>
