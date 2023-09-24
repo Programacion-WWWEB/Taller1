@@ -24,7 +24,7 @@
   <div class = "form_contacto">  
   <h1 class="section-heading"> Contactenos </h1>
    <h2 class="subsection-heading">
-                <form action ="#" th:action="@{/formulario}" method="POST" th:object="${mensaje}">
+                <form action ="#" th:action="@{/contacto}" method="POST" th:object="${mensaje}">
                   <label for="nombre" >Nombre
                     <span class="obligatorio">*</span>
                   </label>
@@ -35,33 +35,33 @@
                   <label for="email" >Email
                     <span class="obligatorio">*</span>
                   </label>
-                    <input type="email" name="introducir_email" th:field="*{email}" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    <input type="email" name="introducir_email" th:field="*{mensaje.email}" id="email" required="obligatorio" placeholder="Escribe tu Email">
                 </h2>
             
                 <h2 class="subsection-heading">
                   <label for="telefono" >Teléfono
                   </label>
-                    <input type="tel" name="introducir_telefono" th:field="*{telefono}" id="telefono" placeholder="Escribe tu teléfono">
+                    <input type="tel" name="introducir_telefono" th:field="${mensaje.telefono}" id="telefono" placeholder="Escribe tu teléfono">
                 </h2>    
               
                 <h2 class="subsection-heading">
                   <label for="website" >Sitio web
                   </label>
-                    <input type="url" name="introducir_website" th:field="*{website}" id="website" placeholder="Escribe la URL de tu web">
+                    <input type="url" name="introducir_website" th:field="${mensaje.pagina}" id="pagina" placeholder="Escribe la URL de tu web">
                 </h2>    
               
                 <h2 class="subsection-heading">
                   <label for="asunto" >Asunto
                     <span class="obligatorio">*</span>
                   </label>
-                    <input type="text" name="introducir_asunto" th:field="*{asunto}" id="asunto" required="obligatorio" placeholder="Escribe un asunto">
+                    <input type="text" name="introducir_asunto" th:field="${mensaje.asunto}" id="asunto" required="obligatorio" placeholder="Escribe un asunto">
                 </h2>    
               
                 <h2 class="subsection-heading">
                   <label for="mensaje" >Mensaje
                     <span class="obligatorio">*</span>
                   </label>                     
-                                    <textarea name="introducir_mensaje" th:field="*{texto}" id="texto" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                                    <textarea name="introducir_mensaje" th:field="*{mensaje.texto}" id="texto" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
                 </h2>
                 
      <button class = "boton_formulario" type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
