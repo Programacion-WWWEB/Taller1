@@ -78,6 +78,46 @@ public class TemplateImageController {
         }
     } 
 
+       @GetMapping("/arquitecturaGeneral/modeloDatos.jpeg")
+    public ResponseEntity<byte[]> getImageConpil() {
+        try {
+            
+            Resource resource = new ClassPathResource("/static/imagenes/arquitecturaGeneral/modeloDatos.jpeg");
+
+        
+            byte[] imageBytes = Files.readAllBytes(Path.of(resource.getURI()));
+
+        
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.IMAGE_JPEG);
+            headers.setContentLength(imageBytes.length);
+            return new ResponseEntity<>(imageBytes, headers, HttpStatus.OK);
+        } catch (IOException e) {
+        
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    } 
+
+        @GetMapping("/arquitecturaGeneral/modeloDespliegue.jpeg")
+    public ResponseEntity<byte[]> getImageConpilation() {
+        try {
+            
+            Resource resource = new ClassPathResource("/static/imagenes/arquitecturaGeneral/modeloDespliegue.jpeg");
+
+        
+            byte[] imageBytes = Files.readAllBytes(Path.of(resource.getURI()));
+
+        
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.IMAGE_JPEG);
+            headers.setContentLength(imageBytes.length);
+            return new ResponseEntity<>(imageBytes, headers, HttpStatus.OK);
+        } catch (IOException e) {
+        
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    } 
+
         @GetMapping("/descripcion.jpg")
     public ResponseEntity<byte[]> getImageImagenes() {
         try {
