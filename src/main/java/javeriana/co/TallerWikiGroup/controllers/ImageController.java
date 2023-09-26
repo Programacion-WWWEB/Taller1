@@ -77,4 +77,6 @@ public class ImageController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
+
+    
 }

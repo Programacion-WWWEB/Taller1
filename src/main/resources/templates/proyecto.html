@@ -25,7 +25,7 @@
   
   <h1 class="title"> MusicaList </h1>
   <h2 class="section-heading-proyecto"> Descripción</h2>
-  <p class="content-proyecto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget magna quis elit pretium feugiat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed in nunc quam. Aenean vitae enim a metus ultrices varius id non sem. Fusce in nulla molestie, facilisis enim id, tempor augue. Praesent aliquet mollis dapibus. Vestibulum ac est sit amet ligula ultrices mollis. Aliquam aliquam pulvinar neque, id accumsan orci bibendum aliquam. In velit sapien, viverra ac facilisis quis, fringilla id lorem.</p>
+  <p class="content-proyecto">Ud deberá desarrollar una aplicación web donde hayan dos tipo de usuarios diferentes (1) usuario administrador del sistema quien principalmente va crear, editar y eliminar los generos y sus canciones; (2) usuario votante donde el principal objetivo de esta es poder hacer listados de canciones ordenadas de la más votada a la menos quien además de crear y activar su cuenta va poder buscar canciones, verificar listas por género musical y finalmente votar y eliminar su voto, para ver el detalle de este partícular ud podrá verlos en la página web de historias de usuario.</p>
 <img src="./imagenes/descripcion.jpg" class="image-centered">
   <h2 class="section-heading-proyecto"> Requerimientos </h2>
   
@@ -69,7 +69,15 @@
 </tbody>
 </table>
   <h3 class="subsubsection-heading-proyecto"> No Funcionales </h3>
-  <p class="content-proyecto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget magna quis elit pretium feugiat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed in nunc quam. Aenean vitae enim a metus ultrices varius id non sem. Fusce in nulla molestie, facilisis enim id, tempor augue. Praesent aliquet mollis dapibus. Vestibulum ac est sit amet ligula ultrices mollis. Aliquam aliquam pulvinar neque, id accumsan orci bibendum aliquam. In velit sapien, viverra ac facilisis quis, fringilla id lorem.</p>
+  <p class="content-proyecto">
+    <ul class = "image-centered">
+      <li class="content-proyecto">Para la conexión con la base de datos se deberá usar JPA.</li>
+      <li class="content-proyecto">Debe ser capaz de funcionar en sistemas operativos tanto Windows como macOS.</li>
+      <li class="content-proyecto">Las consultas a la base de datos deben ser eficientes y optimizadas para evitar tiempos de carga prolongados.</li>
+      <li class="content-proyecto">Debe ser intuitiva y fácil de usar, con un tiempo de aprendizaje mínimo para los usuarios.</li>
+      <li class="content-proyecto">La página debe ser capaz de manejar al menos 10 usuarios concurrentes sin degradar el rendimiento.</li>
+    </ul>
+  </p>
   <h1 class="section-heading-proyecto"> Arquitectura General </h1>
    <h2 class="subsection-heading-proyecto"> Modelo Conceptual </h2>
    <img th:alt="proyecto" th:src="@{./imagenes/arquitecturaGeneral/modeloConceptual.png}" class = "image-centered"/>
@@ -81,6 +89,10 @@
   <img th:alt="proyecto" th:src="@{./imagenes/arquitecturaGeneral/modeloDatos.jpeg}" class = "image-centered"> </img>
  <h2 class="subsection-heading-proyecto"> Diagrama de despliegue </h2>
   <img th:alt="proyecto" th:src="@{./imagenes/arquitecturaGeneral/modeloDespliegue.jpeg}" class = "image-centered"></img>
+  <h2 class="subsection-heading-proyecto"> Diagrama de Secuencia </h2>
+  <img th:alt="proyecto" th:src="@{./imagenes/arquitecturaGeneral/modeloSecuencia.png}" class = "image-centered"></img>
+  <h2 class="subsection-heading-proyecto"> Mockups </h2>
+  <a href="https://www.figma.com/proto/Sijld8xMEuPuV7aJ1W9eQ1/Ranking?type=design&node-id=312-29&t=9hangy8WOsbDJCPJ-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=312%3A29"><img src="https://cdn-icons-png.flaticon.com/512/1420/1420991.png" alt="Linkmockup" style="width:200px;height:200px;" class = "image-centered"></a>
   <div id="contentContainer"></div>
 </body>
 </html>
