@@ -4,7 +4,7 @@
 	<head>
 	  <meta charset="utf-8">
 	  <title>Integrantes</title>
-	  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+	  <link href="../css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <script src="../jss/script.js" type="text/javascript" th:inline="javascript"></script>
 	
 	</head>
@@ -94,5 +94,299 @@
   <h2 class="subsection-heading-proyecto"> Mockups </h2>
   <a href="https://www.figma.com/proto/Sijld8xMEuPuV7aJ1W9eQ1/Ranking?type=design&node-id=312-29&t=9hangy8WOsbDJCPJ-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=312%3A29"><img src="https://cdn-icons-png.flaticon.com/512/1420/1420991.png" alt="Linkmockup" style="width:200px;height:200px;" class = "image-centered"></a>
   <div id="contentContainer"></div>
+
+  <h2 class="subsection-heading-proyecto">Diccionario de Datos</h2>
+  <h3 class="subsubsection-heading-proyecto">Nombre de la tabla: album</h3>
+  <h4 class="topicsection-heading-proyecto">Contenido: Información de un álbum de canciones.</h4>
+  <h4 class="topicsection-heading-proyecto">Variables:9</h4>
+  
+  <table class="tg">
+  <thead>
+    <tr>
+      <th class="tg-aisc">   <br>Nombre   </th>
+      <th class="tg-aisc">   <br>Tipo   </th>
+      <th class="tg-aisc">   <br>Contenido   </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-qav3">   <br>album_id   </td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>INT&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Identificador del álbum&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>name&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>VARCHAR(255)&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Nombre del álbum&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>artist&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>VARCHAR(255)&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Artista que realizo el álbum&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>type&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>VARCHAR(50)&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Tipo de álbum&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>release_date&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>DATE NOT&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Fecha de lanzamiento del álbum&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>rym_rating&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>DECIMAL&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Rating del álbum&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>genres&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>VARCHAR(255)&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Genero del álbum&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">   <br>language   </td>
+      <td class="tg-qav3">   <br>VARCHAR(50)   </td>
+      <td class="tg-qav3">   <br>Lenguaje del álbum   </td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">   <br>colorscheme   </td>
+      <td class="tg-qav3">   <br>VARCHAR(255)   </td>
+      <td class="tg-qav3">   <br>Color del álbum   </td>
+    </tr>
+  </tbody>
+  </table>
+  <h3 class="subsubsection-heading-proyecto">Nombre de la tabla: usuario_votante</h3>
+  <h4 class="topicsection-heading-proyecto">Contenido: Listado de los usuarios que pueden votar</h4>
+  <h4 class="topicsection-heading-proyecto">Variables:5</h4>
+  <table class="tg">
+    <thead>
+      <tr>
+        <th class="tg-aisc">   <br>Nombre   </th>
+        <th class="tg-aisc">   <br>Tipo   </th>
+        <th class="tg-aisc">   <br>Contenido   </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>id&nbsp;&nbsp;&nbsp;</td>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>INT&nbsp;&nbsp;&nbsp;</td>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Identificador del Usuario Votante&nbsp;&nbsp;&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Nombre&nbsp;&nbsp;&nbsp;</td>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>VARCHAR(255)&nbsp;&nbsp;&nbsp;</td>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Nombre del usuario&nbsp;&nbsp;&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Contraseña&nbsp;&nbsp;&nbsp;</td>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>VARCHAR(255)&nbsp;&nbsp;&nbsp;</td>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Contraseña del usuario&nbsp;&nbsp;&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>correo&nbsp;&nbsp;&nbsp;</td>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>VARCHAR(255)&nbsp;&nbsp;&nbsp;</td>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Correo del usuario&nbsp;&nbsp;&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="tg-qav3">   <br>nombreperfil   </td>
+        <td class="tg-qav3">   <br>VARCHAR(255)   </td>
+        <td class="tg-qav3">   <br>Apodo del usuario   </td>
+      </tr>
+    </tbody>
+    </table>
+  
+    <h3 class="subsubsection-heading-proyecto">Nombre de la tabla: UsuarioAdministrador</h3>
+    <h4 class="topicsection-heading-proyecto">Contenido: Listado de los usuarios administradores</h4>
+      <h4 class="topicsection-heading-proyecto"> Variables:3</h4>
+
+  <table class="tg">
+  <thead>
+    <tr>
+      <th class="tg-aisc">   <br>Nombre   </th>
+      <th class="tg-aisc">   <br>Tipo   </th>
+      <th class="tg-aisc">   <br>Contenido   </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>id&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>INT&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Identificador del Usuario Administrador&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">   <br>Nombre   </td>
+      <td class="tg-qav3">   <br>VARCHAR(255)   </td>
+      <td class="tg-qav3">   <br>Nombre del administrador   </td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">   <br>Contraseña   </td>
+      <td class="tg-qav3">   <br>VARCHAR(255)   </td>
+      <td class="tg-qav3">   <br>Contraseña de administrador   </td>
+    </tr>
+  </tbody>
+  </table>
+  <h3 class="subsubsection-heading-proyecto">Nombre de la tabla: Voto</h3>
+  <h4 class="topicsection-heading-proyecto">Contenido: Listado de votos en canciones</h4>
+  <h4 class="topicsection-heading-proyecto">Variables:2</h4>
+
+  <table class="tg">
+  <thead>
+    <tr>
+      <th class="tg-aisc">   <br>Nombre   </th>
+      <th class="tg-aisc">   <br>Tipo   </th>
+      <th class="tg-aisc">   <br>Contenido   </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>usuario_id&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>INT&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Identificador del usuario que realizo el voto&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>track_id&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>INT&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Identificador de la canción que recibió el voto&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+  </tbody>
+  </table>
+  <h3 class="subsubsection-heading-proyecto">Nombre de la tabla: genero</h3>
+  <h4 class="topicsection-heading-proyecto">Contenido: Listado de géneros de canciones y álbumes</h4>
+  <h4 class="topicsection-heading-proyecto">Variables:2</h4>
+  
+  <table class="tg">
+  <thead>
+    <tr>
+      <th class="tg-aisc">   <br>Nombre   </th>
+      <th class="tg-aisc">   <br>Tipo   </th>
+      <th class="tg-aisc">   <br>Contenido   </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>id&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>INT&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Identificador del género musical&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>name&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>VARCHAR(255)&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Nombre del género musical&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+  </tbody>
+  </table>
+  <h3 class="subsubsection-heading-proyecto">Nombre de la tabla: recomendacion</h3>
+  <h4 class="topicsection-heading-proyecto"> Contenido: Listado de recomendaciones de canciones por genero </h4>
+    <h4 class="topicsection-heading-proyecto"> Variables:2</h4>
+  
+  <table class="tg">
+  <thead>
+    <tr>
+      <th class="tg-aisc">   <br>Nombre   </th>
+      <th class="tg-aisc">   <br>Tipo   </th>
+      <th class="tg-aisc">   <br>Contenido   </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>track_id&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>INT&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Identificador de la canción recomendada&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>genero_id&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>INT&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Identificador del género al que pertenece la canción&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+  </tbody>
+  </table>
+  <h3 class="subsubsection-heading-proyecto">Nombre de la tabla: track</h3>
+  <h4 class="topicsection-heading-proyecto">  Contenido: Listado de información de las canciones</h4>
+    <h4 class="topicsection-heading-proyecto"> Variables:4</h4>
+  
+    <table class="tg">
+    <thead>
+      <tr>
+        <th class="tg-aisc">   <br>Nombre   </th>
+        <th class="tg-aisc">   <br>Tipo   </th>
+        <th class="tg-aisc">   <br>Contenido   </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>track_id&nbsp;&nbsp;&nbsp;</td>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>INT&nbsp;&nbsp;&nbsp;</td>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Identificador de la canción&nbsp;&nbsp;&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>album_id&nbsp;&nbsp;&nbsp;</td>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>INT&nbsp;&nbsp;&nbsp;</td>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Identificador del álbum al que pertenece la canción&nbsp;&nbsp;&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>title&nbsp;&nbsp;&nbsp;</td>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>VARCHAR(255)&nbsp;&nbsp;&nbsp;</td>
+        <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Título de la canción&nbsp;&nbsp;&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="tg-qav3">   <br>duration   </td>
+        <td class="tg-qav3">   <br>TIME   </td>
+        <td class="tg-qav3">   <br>Duración de la canción   </td>
+      </tr>
+    </tbody>
+    </table>
+  
+    <h3 class="subsubsection-heading-proyecto">Nombre de la tabla: mensaje</h3>
+    <h4 class="topicsection-heading-proyecto">  Contenido: Información que se obtiene en el contáctenos de la wiki</h4>
+      <h4 class="topicsection-heading-proyecto">  Variables:7</h4>
+  
+  <table class="tg">
+  <thead>
+    <tr>
+      <th class="tg-aisc">   <br>Nombre   </th>
+      <th class="tg-aisc">   <br>Tipo   </th>
+      <th class="tg-aisc">   <br>Contenido   </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>id&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>INT&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Identificador del mensaje&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>nombre&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>VARCHAR(255)&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Nombre de la persona que envía el mensaje&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>email&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>VARCHAR(255)&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Correo de quien envía el mensaje&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>teléfono&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>VARCHAR(20)&nbsp;&nbsp;&nbsp;</td>
+      <td class="tg-qav3">&nbsp;&nbsp;&nbsp;<br>Teléfono de quien envía el mensaje&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">   <br>pagina   </td>
+      <td class="tg-qav3">   <br>VARCHAR(255)   </td>
+      <td class="tg-qav3">   <br>Página de quien envía el mensaje   </td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">   <br>asunto   </td>
+      <td class="tg-qav3">   <br>VARCHAR(255)   </td>
+      <td class="tg-qav3">   <br>Asunto del mensaje recibido   </td>
+    </tr>
+    <tr>
+      <td class="tg-qav3">   <br>mensaje   </td>
+      <td class="tg-qav3">   <br>TEXT    </td>
+      <td class="tg-qav3">   <br>Contenido del mensaje recibido   </td>
+    </tr>
+  </tbody>
+  </table>
+
 </body>
 </html>
