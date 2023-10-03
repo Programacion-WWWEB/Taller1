@@ -58,8 +58,8 @@ public class TemplateImageController {
         }
     } 
 
-     @GetMapping("/arquitecturaGeneral/modeloContendores.png")
-    public ResponseEntity<byte[]> getImageConp() {
+    @GetMapping("/arquitecturaGeneral/modeloContenedores.png")
+    public ResponseEntity<byte[]> getImageContenedores() {
         try {
             
             Resource resource = new ClassPathResource("/static/imagenes/arquitecturaGeneral/modeloContenedores.png");
@@ -116,6 +116,26 @@ public class TemplateImageController {
         
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
+    }  
+
+            @GetMapping("/arquitecturaGeneral/diagramaDeSecuencia.jpeg")
+    public ResponseEntity<byte[]> getImageSequence() {
+        try {
+            
+            Resource resource = new ClassPathResource("/static/imagenes/diagramaDeSecuencia.jpeg");
+
+        
+            byte[] imageBytes = Files.readAllBytes(Path.of(resource.getURI()));
+
+        
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.IMAGE_JPEG);
+            headers.setContentLength(imageBytes.length);
+            return new ResponseEntity<>(imageBytes, headers, HttpStatus.OK);
+        } catch (IOException e) {
+        
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
     } 
 
         @GetMapping("/descripcion.jpg")
@@ -137,5 +157,23 @@ public class TemplateImageController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
-    
+    @GetMapping("/arquitecturaGeneral/modeloSecuencia.png")
+    public ResponseEntity<byte[]> getImageSecuencia() {
+        try {
+            
+            Resource resource = new ClassPathResource("/static/imagenes/arquitecturaGeneral/modeloSecuencia.png");
+
+        
+            byte[] imageBytes = Files.readAllBytes(Path.of(resource.getURI()));
+
+        
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.IMAGE_PNG);
+            headers.setContentLength(imageBytes.length);
+            return new ResponseEntity<>(imageBytes, headers, HttpStatus.OK);
+        } catch (IOException e) {
+        
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    } 
 }
