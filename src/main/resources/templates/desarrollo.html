@@ -20,7 +20,73 @@
 		<button style="float: right; margin-left: 20px;">Contacto</button></a>
 	</header> 
 	<h1 class="title"> Descripciones de endpoints </h1>
-	<p class="content-proyecto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget magna quis elit pretium feugiat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed in nunc quam. Aenean vitae enim a metus ultrices varius id non sem. Fusce in nulla molestie, facilisis enim id, tempor augue. Praesent aliquet mollis dapibus. Vestibulum ac est sit amet ligula ultrices mollis. Aliquam aliquam pulvinar neque, id accumsan orci bibendum aliquam. In velit sapien, viverra ac facilisis quis, fringilla id lorem.</p>
+	<h2 class="subsection-heading-proyecto">Endpoints de Álbum </h2>
+  <h3 class="subsubsection-heading-proyecto">/Album/Lista</h3>
+  <p class="content-proyecto">Crea un listado de los álbumes que están en la base de datos, retorna el id del álbum, el nombre, el artista el tipo, la fecha de estreno, el rating, el lenguaje, el genero y el color del álbum.</p>
+  <h3 class="subsubsection-heading-proyecto">/Album/Buscar/{id}</h3>
+  <p class="content-proyecto">Se realiza una búsqueda que entrega un álbum especifico a partir del id que se le remplaza por el “{id}”, y retorna el id del álbum, el nombre, el artista el tipo, la fecha de estreno, el rating, el lenguaje, el género y el color del álbum.</p>
+  <h3 class="subsubsection-heading-proyecto">/Album/Agregar</h3>
+  <p class="content-proyecto">Se le entrega un JSON con los datos del álbum, también se le puede directamente entregar un listado de los tracks que posee el álbum y los agregara a la tabla de tracks en la base de datos. No se debe agregar un id.</p>
+  <h3 class="subsubsection-heading-proyecto">/Album/Actualizar</h3>
+  <p class="content-proyecto">Se le entrega un JSON con la información del álbum, se requiere un id para saber que álbum se esta editando, si no se guarda la información como un álbum nuevo.</p>
+  <h3 class="subsubsection-heading-proyecto">/Album/Borrar</h3>
+  <p class="content-proyecto">Se le entrega un JSON con toda la información del álbum que se quiere borrar y lo elimina de la base de datos.</p>
+  <h3 class="subsubsection-heading-proyecto">/Album /Borrar/{id}</h3>
+  <p class="content-proyecto">Se recibe el id del álbum a borrar en la tabla. Para hallar el álbum especifico se usa el número que remplaza “{id}”.</p>
+  <h2 class="subsection-heading-proyecto">Endpoints de Genero</h2>
+  <h3 class="subsubsection-heading-proyecto">/Genero/Lista</h3>
+  <p class="content-proyecto">Crea un listado de los géneros que están en la base de datos, retorna el id del género y el nombre.</p>
+  <h3 class="subsubsection-heading-proyecto">/Genero/Buscar/{id}</h3>
+  <p class="content-proyecto">Se realiza una búsqueda que entrega un género especifico a partir del id que se le remplaza por el “{id}”, y retorna el id del género y el nombre.</p>
+  <h3 class="subsubsection-heading-proyecto">/Genero/Agregar </h3>
+  <p class="content-proyecto">Se le entrega un JSON con los datos del género. No se debe agregar un id.</p>
+  <h3 class="subsubsection-heading-proyecto">/Genero/Actualizar </h3>
+  <p class="content-proyecto">Se le entrega un JSON con la información del género, se requiere un id para saber que genero se está editando, si no se guarda la información como un género nuevo.</p>
+  <h3 class="subsubsection-heading-proyecto">/Genero/Borrar</h3>
+  <p class="content-proyecto">Se le entrega un JSON con toda la información del género que se quiere borrar y lo elimina de la base de datos.</p>
+  <h3 class="subsubsection-heading-proyecto">/Genero/Borrar/{id}</h3>
+  <p class="content-proyecto">Se recibe el id del género a borrar en la tabla. Para hallar el genero especifico se usa el número que remplaza “{id}”.</p>
+  <h2 class="subsection-heading-proyecto">Endpoints de Track</h2>
+  <h3 class="subsubsection-heading-proyecto">/Track/Lista</h3>
+  <p class="content-proyecto">Crea un listado de los tracks que están en la base de datos, retorna el id del track, el nombre y su duración.</p>
+  <h3 class="subsubsection-heading-proyecto">/Track/Lista/{id}</h3>
+  <p class="content-proyecto">Crea un listado de los tracks de un álbum especifico, retorna el id del track, el nombre y su duración.</p>
+  <h3 class="subsubsection-heading-proyecto">/Track/Buscar/{id}</h3>
+  <p class="content-proyecto">Se realiza una búsqueda que entrega un track especifico a partir del id que se le remplaza por el “{id}”, y retorna el id del track, el nombre y la duración.</p>
+  <h3 class="subsubsection-heading-proyecto">/Track/Agregar </h3>
+  <p class="content-proyecto">Se le entrega un JSON con los datos del track. No se debe agregar un id.</p>
+  <h3 class="subsubsection-heading-proyecto">/Track/Actualizar </h3>
+  <p class="content-proyecto">Se le entrega un JSON con la información del track, se requiere un id para saber que álbum se está editando, si no se guarda la información como un track nuevo.</p>
+  <h3 class="subsubsection-heading-proyecto">/Track/Borrar</h3>
+  <p class="content-proyecto">Se le entrega un JSON con toda la información del track que se quiere borrar y lo elimina de la base de datos.</p>
+  <h3 class="subsubsection-heading-proyecto">/Track/Borrar/{id}</h3>
+  <p class="content-proyecto">Se recibe el id del track a borrar en la tabla. Para hallar el track especifico se usa el número que remplaza “{id}”.</p>
+  <h2 class="subsection-heading-proyecto">Endpoints de Usuario Administrador</h2>
+  <h3 class="subsubsection-heading-proyecto">/UsuarioAdministrador/Lista</h3>
+  <p class="content-proyecto">Crea un listado de los usuarios administradores que están en la base de datos, retorna el id del usuario administrador y el nombre.</p>
+  <h3 class="subsubsection-heading-proyecto">/UsuarioAdministrador/Buscar/{id}</h3>
+  <p class="content-proyecto">Se realiza una búsqueda que entrega un administrador especifico a partir del id que se le remplaza por el “{id}”, y retorna el id del administrador y el nombre.</p>
+  <h3 class="subsubsection-heading-proyecto">/UsuarioAdministrador/Agregar </h3>
+  <p class="content-proyecto">Se le entrega un JSON con los datos del administrador. No se debe agregar un id.</p>
+  <h3 class="subsubsection-heading-proyecto">/UsuarioAdministrador/Actualizar </h3>
+  <p class="content-proyecto">Se le entrega un JSON con la información del administrador, se requiere un id para saber que álbum se está editando, si no se guarda la información como un administrador nuevo.</p>
+  <h3 class="subsubsection-heading-proyecto">/UsuarioAdministrador/Borrar</h3>
+  <p class="content-proyecto">Se le entrega un JSON con toda la información del administrador que se quiere borrar y lo elimina de la base de datos.</p>
+  <h3 class="subsubsection-heading-proyecto">/UsuarioAdministrador/Borrar/{id}</h3>
+  <p class="content-proyecto">Se recibe el id del administrador a borrar en la tabla. Para hallar el administrador especifico se usa el número que remplaza “{id}”.</p>
+  <h2 class="subsection-heading-proyecto">Endpoints de Usuario Votante</h2>
+  <h3 class="subsubsection-heading-proyecto">/UsuarioVotante/Lista</h3>
+  <p class="content-proyecto">Crea un listado de los votantes que están en la base de datos, retorna el id del votante, su nombre, correo y nombre de perfil.</p>
+  <h3 class="subsubsection-heading-proyecto">/UsuarioVotante/Buscar/{id}</h3>
+  <p class="content-proyecto">Se realiza una búsqueda que entrega un usuario especifico a partir del id que se le remplaza por el “{id}”, y retorna el id del votante, su nombre, correo y nombre de perfil.</p>
+  <h3 class="subsubsection-heading-proyecto">/UsuarioVotante/Agregar </h3>
+  <p class="content-proyecto">Se le entrega un JSON con los datos del usuario. No se debe agregar un id.</p>
+  <h3 class="subsubsection-heading-proyecto">/UsuarioVotante/Actualizar </h3>
+  <p class="content-proyecto">Se le entrega un JSON con la información del usuario, se requiere un id para saber que Usuario se está editando, si no se guarda la información como un usuario nuevo.</p>
+  <h3 class="subsubsection-heading-proyecto">/UsuarioVotante/Borrar</h3>
+  <p class="content-proyecto">Se le entrega un JSON con toda la información del usuario que se quiere borrar y lo elimina de la base de datos.</p>
+  <h3 class="subsubsection-heading-proyecto">/UsuarioVotante/Borrar/{id}</h3>
+  <p class="content-proyecto">Se recibe el id del Usuario a borrar en la tabla. Para hallar el usuario especifico se usa el número que remplaza “{id}”.</p>
    <h2 class="section-heading-proyecto"> Pruebas </h2></a>
 	<h3 class="subsubsection-heading-proyecto"> Casos de prueba frontEnd</h3>
   <p class="content-proyecto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget magna quis elit pretium feugiat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed in nunc quam. Aenean vitae enim a metus ultrices varius id non sem. Fusce in nulla molestie, facilisis enim id, tempor augue. Praesent aliquet mollis dapibus. Vestibulum ac est sit amet ligula ultrices mollis. Aliquam aliquam pulvinar neque, id accumsan orci bibendum aliquam. In velit sapien, viverra ac facilisis quis, fringilla id lorem.</p>
@@ -240,5 +306,206 @@ El voto se registró correctamente y se reflejó en la puntuación del álbum.</
         </tr>
     </table>
 </div>
+<div class="container">
+    <table class =  "tg">
+            <tr>
+                <th class = "tg-aisc">Descripción</th>
+                <td class = "tg-qav3">Identificador de la Prueba:</td>
+                <td class = "tg-qav3"> 005</td>
+            </tr>
+            <tr>
+                <th class = "tg-aisc">Título:</th>
+                <td class = "tg-qav3">Crear un album con canciones</td>
+            </tr>
+            <tr>
+                <th class = "tg-aisc">Descripción:</th>
+                <td class = "tg-qav3">A traves de postman usar localhost:8080/Album/Agregar para pasar un JSON con la informacion de un album y sus canciones</td>
+            </tr>
+            <tr>
+                <th class = "tg-aisc">Diseñada Por:</th>
+                <td class = "tg-qav3">Daniel Nino</td>
+            </tr>
+            <tr>
+                <th class = "tg-aisc">Ejecutada Por:</th>
+                <td class = "tg-qav3">Daniel Nino</td>
+            </tr>
+            <tr>
+                <th class = "tg-aisc">Dependencias de las Pruebas:</th>
+                <td class = "tg-qav3">Ninguna</td>
+            </tr>
+            <tr>
+                <th class = "tg-aisc">Resultados Esperados:</th>
+                <td class = "tg-qav3">Adicion de un album a la base de datos, y la adicion de las canciones a la base de datos. Ejemplo:
+                    {   "name": "Loossemble",
+                        "artist": "Loossemble",
+                        "type": "Mini-Album",
+                        "release_date": "2023-09-25T05:00:00.000+00:00",
+                        "rym_rating": 5.0,
+                        "language": "Korean",
+                        "genres": "Kpop",
+                        "colorscheme": "Yellow",
+                        "trackListing":[
+                        {
+                            "title": "Strawberry Soda",
+                            "duration": "00:03:04"
+                        },
+                        {
+                            "title": "Sensitive",
+                            "duration": "00:03:06"
+                        }
+                    ]}</td>
+            </tr>
+            <tr>
+                <th class = "tg-aisc">Resultados Reales:</th>
+                <td class = "tg-qav3">Se adicionaron las canciones y albums de manera correcta</td>
+            </tr>
+            <tr>
+                <th class = "tg-aisc">Cumplió o No Cumplió?</th>
+                <td class = "tg-qav3">Cumplio</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <table class =  "tg">
+                <tr>
+                    <th class = "tg-aisc">Descripción</th>
+                    <td class = "tg-qav3">Identificador de la Prueba:</td>
+                    <td class = "tg-qav3"> 006</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Título:</th>
+                    <td class = "tg-qav3">Buscar un Album por su id</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Descripción:</th>
+                    <td class = "tg-qav3">A traves de postman usar localhost:8080/Album/Buscar/1 para obtener el album con id 1</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Diseñada Por:</th>
+                    <td class = "tg-qav3">Daniel Nino</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Ejecutada Por:</th>
+                    <td class = "tg-qav3">Daniel Nino</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Dependencias de las Pruebas:</th>
+                    <td class = "tg-qav3">005</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Resultados Esperados:</th>
+                    <td class = "tg-qav3">Se recibe la informacion del album creado en la prueba 005</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Resultados Reales:</th>
+                    <td class = "tg-qav3">Se obtienen los datos del album</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Cumplió o No Cumplió?</th>
+                    <td class = "tg-qav3">Cumplio</td>
+                </tr>
+            </table>
+        </div>
+        <div class="container">
+            <table class =  "tg">
+                <tr>
+                    <th class = "tg-aisc">Descripción</th>
+                    <td class = "tg-qav3">Identificador de la Prueba:</td>
+                    <td class = "tg-qav3"> 007</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Título:</th>
+                    <td class = "tg-qav3">Listar los albums</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Descripción:</th>
+                    <td class = "tg-qav3">A traves de postman usar localhost:8080/Album/Lista</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Diseñada Por:</th>
+                    <td class = "tg-qav3">Daniel Nino</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Ejecutada Por:</th>
+                    <td class = "tg-qav3">Daniel Nino</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Dependencias de las Pruebas:</th>
+                    <td class = "tg-qav3">005</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Resultados Esperados:</th>
+                    <td class = "tg-qav3">Se genera un listado de los albumes que se encuentran dentro de la base de datos</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Resultados Reales:</th>
+                    <td class = "tg-qav3">se genera la lista de manera correcta</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Cumplió o No Cumplió?</th>
+                    <td class = "tg-qav3">Cumplio</td>
+                </tr>
+            </table>
+        </div>
+        <div class="container">
+            <table class =  "tg">
+                <tr>
+                    <th class = "tg-aisc">Descripción</th>
+                    <td class = "tg-qav3">Identificador de la Prueba:</td>
+                    <td class = "tg-qav3">008</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Título:</th>
+                    <td class = "tg-qav3">Actualizar Album</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Descripción:</th>
+                    <td class = "tg-qav3">A traves de postman usar localhost:8080/Album/Actualizar para actualizar la informacion del album creado</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Diseñada Por:</th>
+                    <td class = "tg-qav3">Daniel Nino</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Ejecutada Por:</th>
+                    <td class = "tg-qav3">Daniel Nino</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Dependencias de las Pruebas:</th>
+                    <td class = "tg-qav3">005</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Resultados Esperados:</th>
+                    <td class = "tg-qav3">Actualizacion de un album. Ejemplo:
+                        {   "album_id": 1,
+                            "name": "Loossemble2",
+                            "artist": "Loossemble2",
+                            "type": "Mini-Album",
+                            "release_date": "2023-09-25T05:00:00.000+00:00",
+                            "rym_rating": 5.0,
+                            "language": "Korean",
+                            "genres": "Kpop",
+                            "colorscheme": "Yellow",
+                            "trackListing":[
+                            {
+                                "title": "Strawberry Soda",
+                                "duration": "00:03:04"
+                            },
+                            {
+                                "title": "Sensitive",
+                                "duration": "00:03:06"
+                            }
+                        ]}</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Resultados Reales:</th>
+                    <td class = "tg-qav3">Se realizan los cambios</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Cumplió o No Cumplió?</th>
+                    <td class = "tg-qav3">Cumplio</td>
+                </tr>
+            </table>
+        </div>
 </body>
 </html>
