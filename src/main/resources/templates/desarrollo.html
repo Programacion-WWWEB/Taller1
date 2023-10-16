@@ -306,5 +306,206 @@ El voto se registró correctamente y se reflejó en la puntuación del álbum.</
         </tr>
     </table>
 </div>
+<div class="container">
+    <table class =  "tg">
+            <tr>
+                <th class = "tg-aisc">Descripción</th>
+                <td class = "tg-qav3">Identificador de la Prueba:</td>
+                <td class = "tg-qav3"> 005</td>
+            </tr>
+            <tr>
+                <th class = "tg-aisc">Título:</th>
+                <td class = "tg-qav3">Crear un album con canciones</td>
+            </tr>
+            <tr>
+                <th class = "tg-aisc">Descripción:</th>
+                <td class = "tg-qav3">A traves de postman usar localhost:8080/Album/Agregar para pasar un JSON con la informacion de un album y sus canciones</td>
+            </tr>
+            <tr>
+                <th class = "tg-aisc">Diseñada Por:</th>
+                <td class = "tg-qav3">Daniel Nino</td>
+            </tr>
+            <tr>
+                <th class = "tg-aisc">Ejecutada Por:</th>
+                <td class = "tg-qav3">Daniel Nino</td>
+            </tr>
+            <tr>
+                <th class = "tg-aisc">Dependencias de las Pruebas:</th>
+                <td class = "tg-qav3">Ninguna</td>
+            </tr>
+            <tr>
+                <th class = "tg-aisc">Resultados Esperados:</th>
+                <td class = "tg-qav3">Adicion de un album a la base de datos, y la adicion de las canciones a la base de datos. Ejemplo:
+                    {   "name": "Loossemble",
+                        "artist": "Loossemble",
+                        "type": "Mini-Album",
+                        "release_date": "2023-09-25T05:00:00.000+00:00",
+                        "rym_rating": 5.0,
+                        "language": "Korean",
+                        "genres": "Kpop",
+                        "colorscheme": "Yellow",
+                        "trackListing":[
+                        {
+                            "title": "Strawberry Soda",
+                            "duration": "00:03:04"
+                        },
+                        {
+                            "title": "Sensitive",
+                            "duration": "00:03:06"
+                        }
+                    ]}</td>
+            </tr>
+            <tr>
+                <th class = "tg-aisc">Resultados Reales:</th>
+                <td class = "tg-qav3">Se adicionaron las canciones y albums de manera correcta</td>
+            </tr>
+            <tr>
+                <th class = "tg-aisc">Cumplió o No Cumplió?</th>
+                <td class = "tg-qav3">Cumplio</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <table class =  "tg">
+                <tr>
+                    <th class = "tg-aisc">Descripción</th>
+                    <td class = "tg-qav3">Identificador de la Prueba:</td>
+                    <td class = "tg-qav3"> 006</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Título:</th>
+                    <td class = "tg-qav3">Buscar un Album por su id</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Descripción:</th>
+                    <td class = "tg-qav3">A traves de postman usar localhost:8080/Album/Buscar/1 para obtener el album con id 1</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Diseñada Por:</th>
+                    <td class = "tg-qav3">Daniel Nino</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Ejecutada Por:</th>
+                    <td class = "tg-qav3">Daniel Nino</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Dependencias de las Pruebas:</th>
+                    <td class = "tg-qav3">005</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Resultados Esperados:</th>
+                    <td class = "tg-qav3">Se recibe la informacion del album creado en la prueba 005</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Resultados Reales:</th>
+                    <td class = "tg-qav3">Se obtienen los datos del album</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Cumplió o No Cumplió?</th>
+                    <td class = "tg-qav3">Cumplio</td>
+                </tr>
+            </table>
+        </div>
+        <div class="container">
+            <table class =  "tg">
+                <tr>
+                    <th class = "tg-aisc">Descripción</th>
+                    <td class = "tg-qav3">Identificador de la Prueba:</td>
+                    <td class = "tg-qav3"> 007</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Título:</th>
+                    <td class = "tg-qav3">Listar los albums</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Descripción:</th>
+                    <td class = "tg-qav3">A traves de postman usar localhost:8080/Album/Lista</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Diseñada Por:</th>
+                    <td class = "tg-qav3">Daniel Nino</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Ejecutada Por:</th>
+                    <td class = "tg-qav3">Daniel Nino</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Dependencias de las Pruebas:</th>
+                    <td class = "tg-qav3">005</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Resultados Esperados:</th>
+                    <td class = "tg-qav3">Se genera un listado de los albumes que se encuentran dentro de la base de datos</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Resultados Reales:</th>
+                    <td class = "tg-qav3">se genera la lista de manera correcta</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Cumplió o No Cumplió?</th>
+                    <td class = "tg-qav3">Cumplio</td>
+                </tr>
+            </table>
+        </div>
+        <div class="container">
+            <table class =  "tg">
+                <tr>
+                    <th class = "tg-aisc">Descripción</th>
+                    <td class = "tg-qav3">Identificador de la Prueba:</td>
+                    <td class = "tg-qav3">008</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Título:</th>
+                    <td class = "tg-qav3">Actualizar Album</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Descripción:</th>
+                    <td class = "tg-qav3">A traves de postman usar localhost:8080/Album/Actualizar para actualizar la informacion del album creado</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Diseñada Por:</th>
+                    <td class = "tg-qav3">Daniel Nino</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Ejecutada Por:</th>
+                    <td class = "tg-qav3">Daniel Nino</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Dependencias de las Pruebas:</th>
+                    <td class = "tg-qav3">005</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Resultados Esperados:</th>
+                    <td class = "tg-qav3">Actualizacion de un album. Ejemplo:
+                        {   "album_id": 1,
+                            "name": "Loossemble2",
+                            "artist": "Loossemble2",
+                            "type": "Mini-Album",
+                            "release_date": "2023-09-25T05:00:00.000+00:00",
+                            "rym_rating": 5.0,
+                            "language": "Korean",
+                            "genres": "Kpop",
+                            "colorscheme": "Yellow",
+                            "trackListing":[
+                            {
+                                "title": "Strawberry Soda",
+                                "duration": "00:03:04"
+                            },
+                            {
+                                "title": "Sensitive",
+                                "duration": "00:03:06"
+                            }
+                        ]}</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Resultados Reales:</th>
+                    <td class = "tg-qav3">Se realizan los cambios</td>
+                </tr>
+                <tr>
+                    <th class = "tg-aisc">Cumplió o No Cumplió?</th>
+                    <td class = "tg-qav3">Cumplio</td>
+                </tr>
+            </table>
+        </div>
 </body>
 </html>
